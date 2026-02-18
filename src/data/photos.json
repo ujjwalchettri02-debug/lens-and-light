@@ -1,0 +1,53 @@
+[
+  {
+    "id": 1,
+    "title": "Sunbird on a cloudy Day",
+    "description": "Beautiful bird perched on wire",
+    "category": "Minimal",
+    "imageUrl": "https://res.cloudinary.com/dbqld3dms/image/upload/v1771130418/cld-sample-2.jpg.",
+    "thumbnailUrl": "https://res.cloudinary.com/dbqld3dms/image/upload/v1771130418/cld-sample-2.jpg",
+    "price": 499,
+    "dollarPrice": 5.5,
+    "stripeLink": "https://rzp.io/rzp/78FwKdts",
+    "technical": {
+      "camera": "Nikon Z50",
+      "lens": "15-50mm f/2.8",
+      "settings": "ISO 400, f/5.6, 1/500s"
+    },
+    "digitalDownload": true
+  },
+  {
+    "id": 2,
+    "title": "Spider Lily in Bloom",
+    "description": "Vibrant red spider lily flower",
+    "category": "Floral",
+    "imageUrl": "https://res.cloudinary.com/dbqld3dms/image/upload/v1771387617/DSC_2256_op6ujc.jpg",
+    "thumbnailUrl": "https://res.cloudinary.com/dbqld3dms/image/upload/v1771387617/DSC_2256_op6ujc.jpg",
+    "price": 499,
+    "dollarPrice": 5.5,
+    "stripeLink": "https://rzp.io/rzp/78FwKdts",
+    "technical": {
+      "camera": "Sony A7R IV",
+      "lens": "24-70mm f/2.8",
+      "settings": "ISO 100, f/11, 1/250s"
+    },
+    "digitalDownload": true
+  },
+  {
+    "id": 3,
+    "title": "Buddha park",
+    "description": "Peaceful statue in a serene park",
+    "category": "Scenic",
+    "imageUrl": "https://res.cloudinary.com/dbqld3dms/image/upload/v1771387881/20230330_131101_yfxolu.jpg",
+    "thumbnailUrl": "https://res.cloudinary.com/dbqld3dms/image/upload/v1771387881/20230330_131101_yfxolu.jpg",
+    "price": 499,
+    "dollarPrice": 5.5,
+    "stripeLink": "https://rzp.io/rzp/XJ9S6Mw6",
+    "technical": {
+      "camera": "Nikon Z50",
+      "lens": "15-50mm f/2.8",
+      "settings": "ISO 64, f/16, 30s"
+    },
+    "digitalDownload": true
+  }
+]

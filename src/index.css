@@ -1,0 +1,144 @@
+/* stylelint-disable-next-line at-rule-no-unknown */
+@tailwind base;
+/* stylelint-disable-next-line at-rule-no-unknown */
+@tailwind components;
+/* stylelint-disable-next-line at-rule-no-unknown */
+@tailwind utilities;
+
+@layer base {
+  body {
+    /* stylelint-disable-next-line at-rule-no-unknown */
+    @apply bg-zinc-950 text-zinc-100 antialiased;
+  }
+}
+
+@layer utilities {
+  .masonry-grid {
+    column-count: 1;
+    column-gap: 1.5rem;
+  }
+
+  @media (min-width: 640px) {
+    .masonry-grid {
+      column-count: 2;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .masonry-grid {
+      column-count: 3;
+    }
+  }
+
+  .masonry-item {
+    break-inside: avoid;
+    margin-bottom: 1.5rem;
+  }
+
+  .gradient-overlay {
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,0.8),
+    rgba(0,0,0,0.2),
+    transparent
+  );
+}
+
+  .backdrop-blur-glass {
+    backdrop-filter: blur(20px) saturate(180%);
+    background-color: rgba(0, 0, 0, 0.75);
+  }
+
+  /* Popup animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes scaleUp {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  @keyframes fadeInDelay {
+    0% {
+      opacity: 0;
+    }
+    30% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.3s ease-out;
+  }
+
+  .animate-scale-up {
+    animation: scaleUp 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .animate-fade-in-delay {
+    animation: fadeInDelay 0.6s ease-out;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #18181b;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #52525b;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #71717a;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Image loading animation */
+img {
+  /* stylelint-disable-next-line at-rule-no-unknown */
+  @apply transition-opacity duration-500 select-none;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+img[loading] {
+  /* stylelint-disable-next-line at-rule-no-unknown */
+  @apply opacity-0;
+}
+
+img:not([loading]) {
+  /* stylelint-disable-next-line at-rule-no-unknown */
+  @apply opacity-100;
+}
+
+/* Hide navbar when lightbox is open */
+html.lightbox-open nav {
+  display: none;
+}
