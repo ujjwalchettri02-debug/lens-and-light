@@ -47,7 +47,7 @@ const Lightbox = ({ photo, onClose }) => {
       }
 
       const options = {
-        key: "rzp_test_SHb4FyoscYTCsc", // Your Razorpay Test Key ID
+        key: "rzp_live_SJSLXwZIfGcXe8", // Your Razorpay Test Key ID
         amount: order.amount,
         currency: "INR",
         name: "Lens & Light",
