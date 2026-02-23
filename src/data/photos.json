@@ -49,5 +49,22 @@
       "settings": "ISO 64, f/16, 1/125s"
     },
     "digitalDownload": true
+  },
+  {
+    "id": 4,
+    "title": "Cactus Farm",
+    "description": "Prickly cactus nursery",
+    "category": "Floral",
+    "imageUrl": "https://res.cloudinary.com/dbqld3dms/image/upload/v1771822114/DSC_3426_enicfo.jpg",
+    "thumbnailUrl": "https://res.cloudinary.com/dbqld3dms/image/upload/v1771822114/DSC_3426_enicfo.jpg",
+    "price": 299,
+    "dollarPrice": 5.5,
+    "stripeLink": "https://rzp.io/rzp/XJ9S6Mw6",
+    "technical": {
+      "camera": "Nikon Z50",
+      "lens": "15-50mm f/2.8",
+      "settings": "ISO 64, f/16, 1/125s"
+    },
+    "digitalDownload": true
   }
 ]
