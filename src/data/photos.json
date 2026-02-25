@@ -100,5 +100,22 @@
       "settings": "ISO 64, f/16, 1/125s"
     },
     "digitalDownload": true
+  },
+  {
+    "id": 7,
+    "title": "Orchid in bloom",
+    "description": "Blooming Orchid against a beige wall",
+    "category": "Floral",
+    "imageUrl": "https://res.cloudinary.com/dbqld3dms/image/upload/v1771993984/DSC_4983_jt8kda.jpg",
+    "thumbnailUrl": "https://res.cloudinary.com/dbqld3dms/image/upload/v1771993984/DSC_4983_jt8kda.jpg",
+    "price": 399,
+    "dollarPrice": 5.5,
+    "stripeLink": "https://rzp.io/rzp/XJ9S6Mw6",
+    "technical": {
+      "camera": "Nikon Z50",
+      "lens": "15-50mm f/2.8",
+      "settings": "ISO 64, f/16, 1/125s"
+    },
+    "digitalDownload": true
   }
 ]
