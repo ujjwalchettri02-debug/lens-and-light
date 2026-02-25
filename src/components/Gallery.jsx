@@ -56,21 +56,33 @@ const Gallery = () => {
           {filteredPhotos.map((photo) => (
             <div
               key={photo.id}
-              className="group relative cursor-pointer rounded-2xl shadow-xl bg-black overflow-hidden flex items-center justify-center"
+              className="group relative cursor-pointer rounded-2xl shadow-xl overflow-hidden"
               onClick={() => setSelectedPhoto(photo)}
             >
 
-              {/* Image - FIXED (No Cropping) */}
-              <img
-                src={photo.thumbnailUrl}
-                alt={photo.title}
-                className="w-full h-auto max-h-[500px] object-contain transition-transform duration-500 group-hover:scale-105"
-              />
+              {/* Container */}
+              <div className="relative w-full flex items-center justify-center overflow-hidden">
+
+                {/* Blurred Background */}
+                <img
+                  src={photo.thumbnailUrl}
+                  alt=""
+                  className="absolute inset-0 w-full h-full object-cover blur-2xl scale-110 opacity-40"
+                />
+
+                {/* Main Image */}
+                <img
+                  src={photo.thumbnailUrl}
+                  alt={photo.title}
+                  className="relative w-full h-auto max-h-[500px] object-contain transition-transform duration-500 group-hover:scale-105"
+                />
+
+              </div>
 
               {/* Overlay */}
               <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 
-              {/* Text Content */}
+              {/* Text */}
               <div className="absolute bottom-0 left-0 p-6 w-full translate-y-6 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-400 ease-out">
                 <h3 className="text-xl font-semibold text-white">
                   {photo.title}
