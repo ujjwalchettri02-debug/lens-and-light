@@ -22,7 +22,7 @@ const Gallery = () => {
   return (
     <section
       id="gallery"
-      className="min-h-screen py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-zinc-950 via-blue-950 to-zinc-900 mt-16"
+      className="min-h-[100dvh] py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-zinc-950 via-blue-950 to-zinc-900 mt-16"
     >
       <div className="max-w-7xl mx-auto">
 
@@ -56,15 +56,15 @@ const Gallery = () => {
           {filteredPhotos.map((photo) => (
             <div
               key={photo.id}
-              className="group relative cursor-pointer overflow-hidden rounded-2xl shadow-xl"
+              className="group relative cursor-pointer rounded-2xl shadow-xl bg-black overflow-hidden flex items-center justify-center"
               onClick={() => setSelectedPhoto(photo)}
             >
 
-              {/* Image */}
+              {/* Image - FIXED (No Cropping) */}
               <img
                 src={photo.thumbnailUrl}
                 alt={photo.title}
-                className="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110"
+                className="w-full h-auto max-h-[500px] object-contain transition-transform duration-500 group-hover:scale-105"
               />
 
               {/* Overlay */}
