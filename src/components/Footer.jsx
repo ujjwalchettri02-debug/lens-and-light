@@ -79,7 +79,7 @@ const Footer = () => {
                 <Instagram className="w-5 h-5 text-sky-300" />
               </a>
               <a
-                href="mailto:contact@lensandlight.com"
+                href="mailto:lensandlightpkg@gmail.com"
                 className="p-3 bg-gradient-to-br from-sky-500/30 to-blue-500/30 border border-blue-400/30 rounded-lg hover:border-blue-400/60 hover:shadow-lg hover:shadow-blue-400/30 transition-all duration-200"
                 aria-label="Email"
               >
@@ -88,7 +88,7 @@ const Footer = () => {
             </div>
             <p className="font-sans text-sm text-zinc-400">
               <a
-                href="mailto:contact@lensandlight.com"
+                href="mailto:lensandlightpkg@gmail.com"
                 className="hover:text-zinc-100 transition-colors duration-200"
               >
                 contact@lensandlight.com
