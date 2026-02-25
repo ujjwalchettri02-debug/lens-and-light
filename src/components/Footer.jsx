@@ -12,6 +12,7 @@ const Footer = () => {
     <footer id="contact" className="bg-gradient-to-t from-zinc-950 via-blue-950/10 to-zinc-950 border-t border-zinc-800/50 py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+
           {/* Brand */}
           <div>
             <div className="flex items-center gap-3 mb-4 group cursor-pointer">
@@ -20,7 +21,9 @@ const Footer = () => {
                 <Aperture className="w-5 h-5 text-white relative z-10" />
               </div>
               <div>
-                <h3 className="font-display text-xl font-semibold bg-gradient-to-r from-sky-400 via-blue-400 to-cyan-500 bg-clip-text text-transparent">Lens & Light</h3>
+                <h3 className="font-display text-xl font-semibold bg-gradient-to-r from-sky-400 via-blue-400 to-cyan-500 bg-clip-text text-transparent">
+                  Lens & Light
+                </h3>
                 <p className="text-xs text-zinc-500">Fine Art Photography</p>
               </div>
             </div>
@@ -78,6 +81,7 @@ const Footer = () => {
               >
                 <Instagram className="w-5 h-5 text-sky-300" />
               </a>
+
               <a
                 href="mailto:lensandlightpkg@gmail.com"
                 className="p-3 bg-gradient-to-br from-sky-500/30 to-blue-500/30 border border-blue-400/30 rounded-lg hover:border-blue-400/60 hover:shadow-lg hover:shadow-blue-400/30 transition-all duration-200"
@@ -86,15 +90,17 @@ const Footer = () => {
                 <Mail className="w-5 h-5 text-sky-300" />
               </a>
             </div>
+
             <p className="font-sans text-sm text-zinc-400">
               <a
                 href="mailto:lensandlightpkg@gmail.com"
                 className="hover:text-zinc-100 transition-colors duration-200"
               >
-                contact@lensandlight.com
+                lensandlightpkg@gmail.com
               </a>
             </p>
           </div>
+
         </div>
 
         {/* Bottom Bar */}
