@@ -7,11 +7,9 @@ const Gallery = () => {
   const [photos, setPhotos] = useState([]);
   const [selectedPhoto, setSelectedPhoto] = useState(null);
   const [filter, setFilter] = useState("All");
-  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     setPhotos(photosData || []);
-    setLoading(false);
   }, []);
 
   const categories = ["All", ...new Set(photos.map((p) => p.category))];
@@ -33,9 +31,6 @@ const Gallery = () => {
           <h2 className="text-5xl sm:text-6xl font-bold mb-4 tracking-tight bg-gradient-to-r from-sky-300 via-blue-300 to-cyan-400 bg-clip-text text-transparent">
             Gallery
           </h2>
-          <p className="text-lg text-zinc-400 max-w-2xl mx-auto">
-            Browse our collection of fine art photography.
-          </p>
         </div>
 
         {/* Filter */}
@@ -57,40 +52,37 @@ const Gallery = () => {
         </div>
 
         {/* Grid */}
-        {!loading && (
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {filteredPhotos.map((photo) => (
-              <div
-                key={photo.id}
-                className="cursor-pointer"
-                onClick={() => setSelectedPhoto(photo)}
-              >
-                {/* Card */}
-                <div className="rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition bg-transparent">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {filteredPhotos.map((photo) => (
+            <div
+              key={photo.id}
+              className="group relative cursor-pointer overflow-hidden rounded-2xl shadow-xl"
+              onClick={() => setSelectedPhoto(photo)}
+            >
 
-                  {/* Image */}
-                  <img
-                    src={photo.thumbnailUrl}
-                    alt={photo.title}
-                    className="w-full block"
-                    loading="lazy"
-                  />
+              {/* Image */}
+              <img
+                src={photo.thumbnailUrl}
+                alt={photo.title}
+                className="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110"
+              />
 
-                  {/* Caption */}
-                  <div className="p-4 bg-zinc-900">
-                    <h3 className="font-semibold text-white">
-                      {photo.title}
-                    </h3>
-                    <p className="text-sm text-zinc-400">
-                      ₹{photo.price}
-                    </p>
-                  </div>
+              {/* Overlay */}
+              <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 
-                </div>
+              {/* Text Content */}
+              <div className="absolute bottom-0 left-0 p-6 w-full translate-y-6 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-400 ease-out">
+                <h3 className="text-xl font-semibold text-white">
+                  {photo.title}
+                </h3>
+                <p className="text-sm text-zinc-300 mt-1">
+                  ₹{photo.price}
+                </p>
               </div>
-            ))}
-          </div>
-        )}
+
+            </div>
+          ))}
+        </div>
 
       </div>
 
