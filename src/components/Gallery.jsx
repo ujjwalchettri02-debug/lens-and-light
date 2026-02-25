@@ -67,12 +67,11 @@ const Gallery = () => {
               >
                 <div className="rounded-lg overflow-hidden shadow-xl bg-zinc-900 hover:shadow-2xl transition">
 
-                  {/* FIXED IMAGE */}
+                  {/* ✅ FIXED IMAGE (No Cropping) */}
                   <img
                     src={photo.thumbnailUrl}
                     alt={photo.title}
-                    className="w-full h-64 object-cover brightness-100 contrast-100 opacity-100"
-                    style={{ filter: "none" }}
+                    className="w-full h-auto object-contain bg-zinc-800"
                     loading="lazy"
                   />
 
