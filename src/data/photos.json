@@ -66,5 +66,22 @@
       "settings": "ISO 64, f/16, 1/125s"
     },
     "digitalDownload": true
+  },
+  {
+    "id": 5,
+    "title": "Zen Cat",
+    "description": "Cat meditating on a monastery wall",
+    "category": "Scenic",
+    "imageUrl": "https://res.cloudinary.com/dbqld3dms/image/upload/v1771822022/20250517_092725_1_eja0cr.jpg",
+    "thumbnailUrl": "https://res.cloudinary.com/dbqld3dms/image/upload/v1771822022/20250517_092725_1_eja0cr.jpg",
+    "price": 299,
+    "dollarPrice": 5.5,
+    "stripeLink": "https://rzp.io/rzp/XJ9S6Mw6",
+    "technical": {
+      "camera": "Nikon Z50",
+      "lens": "15-50mm f/2.8",
+      "settings": "ISO 64, f/16, 1/125s"
+    },
+    "digitalDownload": true
   }
 ]
