@@ -29,6 +29,7 @@ const Gallery = () => {
       className="min-h-screen py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-zinc-950 via-blue-950 to-zinc-900 relative mt-16"
     >
       <div className="max-w-7xl mx-auto relative z-10">
+
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-5xl sm:text-6xl font-bold mb-4 tracking-tight bg-gradient-to-r from-sky-300 via-blue-300 to-cyan-400 bg-clip-text text-transparent">
@@ -70,11 +71,11 @@ const Gallery = () => {
             {filteredPhotos.map((photo) => (
               <div
                 key={photo.id}
-                className="group cursor-pointer"
+                className="cursor-pointer"
                 onClick={() => setSelectedPhoto(photo)}
               >
                 <div className="relative overflow-hidden rounded-lg bg-zinc-900 shadow-xl transition-all duration-300 hover:scale-[1.02]">
-                  
+
                   {/* Image */}
                   <img
                     src={photo.thumbnailUrl || photo.imageUrl}
@@ -82,14 +83,14 @@ const Gallery = () => {
                     loading="lazy"
                     className="w-full h-auto object-cover"
                     onError={(e) => {
-                      e.target.src = photo.imageUrl;
+                      e.currentTarget.src = photo.imageUrl;
                     }}
                     onContextMenu={(e) => e.preventDefault()}
                     onDragStart={(e) => e.preventDefault()}
                   />
 
-                  {/* Overlay */}
-                  <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                  {/* Desktop Overlay Only */}
+                  <div className="absolute inset-0 bg-black/60 opacity-0 md:hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 pointer-events-none">
                     <h3 className="text-xl font-semibold mb-2">
                       {photo.title}
                     </h3>
@@ -105,6 +106,7 @@ const Gallery = () => {
                       </span>
                     </div>
                   </div>
+
                 </div>
               </div>
             ))}
