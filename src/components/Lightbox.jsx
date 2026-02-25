@@ -125,7 +125,7 @@ const Lightbox = ({ photo, onClose }) => {
               </div>
 
               <div className="border-t border-blue-700/30 pt-4">
-                <p className="text-xs text-zinc-400 uppercase">Investment</p>
+                <p className="text-xs text-zinc-400 uppercase">Price</p>
                 <p className="text-2xl font-bold text-white">
                   ₹{photo.price}
                 </p>
