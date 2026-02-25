@@ -7,7 +7,6 @@
 
 @layer base {
   body {
-    /* stylelint-disable-next-line at-rule-no-unknown */
     @apply bg-zinc-950 text-zinc-100 antialiased;
   }
 }
@@ -107,7 +106,6 @@ html {
 /* ============================= */
 
 img {
-  /* Tailwind transition */
   @apply transition-opacity duration-500 select-none;
 
   user-select: none;
@@ -119,14 +117,6 @@ img {
   user-drag: none;
 
   pointer-events: auto;
-}
-
-img[loading] {
-  @apply opacity-0;
-}
-
-img:not([loading]) {
-  @apply opacity-100;
 }
 
 /* Disable text selection globally */

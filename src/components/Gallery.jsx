@@ -65,13 +65,14 @@ const Gallery = () => {
                 className="cursor-pointer"
                 onClick={() => setSelectedPhoto(photo)}
               >
-                <div className="rounded-lg overflow-hidden shadow-xl bg-zinc-900 hover:shadow-2xl transition">
+                {/* Card */}
+                <div className="rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition bg-transparent">
 
-                  {/* ✅ FIXED IMAGE (No Cropping) */}
+                  {/* Image */}
                   <img
                     src={photo.thumbnailUrl}
                     alt={photo.title}
-                    className="w-full h-auto object-contain bg-zinc-800"
+                    className="w-full block"
                     loading="lazy"
                   />
 
