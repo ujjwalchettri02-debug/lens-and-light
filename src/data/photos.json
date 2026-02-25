@@ -5,7 +5,7 @@
     "description": "Beautiful bird perched on wire",
     "category": "Minimal",
     "imageUrl": "https://res.cloudinary.com/dbqld3dms/image/upload/v1771415971/DSC_1698_izeojn.jpg",
-    "thumbnailUrl": "https://res.cloudinary.com/dbqld3dms/image/upload/v1771415971/DSC_1698_izeojn.jpg",
+    "thumbnailUrl":"https://res.cloudinary.com/dbqld3dms/image/upload/f_auto,q_auto,w_800/v1771415971/DSC_1698_izeojn.jpg",
     "price": 299,
     "dollarPrice": 5.5,
     "stripeLink": "https://rzp.io/rzp/78FwKdts",
