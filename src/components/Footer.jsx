@@ -40,26 +40,17 @@ const Footer = () => {
             </h4>
             <ul className="space-y-2 font-sans text-sm">
               <li>
-                <a
-                  href="#gallery"
-                  className="text-zinc-400 hover:text-zinc-100 transition-colors duration-200"
-                >
+                <a href="#gallery" className="text-zinc-400 hover:text-zinc-100 transition-colors duration-200">
                   Gallery
                 </a>
               </li>
               <li>
-                <a
-                  href="#about"
-                  className="text-zinc-400 hover:text-zinc-100 transition-colors duration-200"
-                >
+                <a href="#about" className="text-zinc-400 hover:text-zinc-100 transition-colors duration-200">
                   About
                 </a>
               </li>
               <li>
-                <a
-                  href="#contact"
-                  className="text-zinc-400 hover:text-zinc-100 transition-colors duration-200"
-                >
+                <a href="#contact" className="text-zinc-400 hover:text-zinc-100 transition-colors duration-200">
                   Contact
                 </a>
               </li>
@@ -71,7 +62,9 @@ const Footer = () => {
             <h4 className="font-sans font-semibold text-zinc-300 mb-4 uppercase tracking-wide text-sm">
               Connect
             </h4>
+
             <div className="flex gap-4 mb-6">
+              {/* Instagram */}
               <a
                 href="https://www.instagram.com/snap.outofit_?igsh=MTRveTVrNTIydTJkYQ=="
                 target="_blank"
@@ -82,8 +75,11 @@ const Footer = () => {
                 <Instagram className="w-5 h-5 text-sky-300" />
               </a>
 
+              {/* Gmail Direct Open */}
               <a
-                href="mailto:lensandlightpkg@gmail.com"
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=lensandlightpkg@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="p-3 bg-gradient-to-br from-sky-500/30 to-blue-500/30 border border-blue-400/30 rounded-lg hover:border-blue-400/60 hover:shadow-lg hover:shadow-blue-400/30 transition-all duration-200"
                 aria-label="Email"
               >
@@ -93,7 +89,9 @@ const Footer = () => {
 
             <p className="font-sans text-sm text-zinc-400">
               <a
-                href="mailto:lensandlightpkg@gmail.com"
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=lensandlightpkg@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="hover:text-zinc-100 transition-colors duration-200"
               >
                 lensandlightpkg@gmail.com
