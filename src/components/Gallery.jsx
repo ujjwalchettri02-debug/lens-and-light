@@ -11,7 +11,7 @@ const Gallery = () => {
 
   useEffect(() => {
     setTimeout(() => {
-      setPhotos(photosData);
+      setPhotos(photosData || []);
       setLoading(false);
     }, 300);
   }, []);
@@ -35,8 +35,7 @@ const Gallery = () => {
             Gallery
           </h2>
           <p className="text-lg text-zinc-400 max-w-2xl mx-auto">
-            Browse our collection of fine art photography. Click any image to
-            view details and purchase options.
+            Browse our collection of fine art photography.
           </p>
         </div>
 
@@ -75,15 +74,21 @@ const Gallery = () => {
                 onClick={() => setSelectedPhoto(photo)}
               >
                 <div className="relative overflow-hidden rounded-lg bg-zinc-900 shadow-xl transition-all duration-300 hover:scale-[1.02]">
+                  
+                  {/* Image */}
                   <img
-                    src={photo.thumbnailUrl}
+                    src={photo.thumbnailUrl || photo.imageUrl}
                     alt={photo.title}
                     loading="lazy"
                     className="w-full h-auto object-cover"
+                    onError={(e) => {
+                      e.target.src = photo.imageUrl;
+                    }}
                     onContextMenu={(e) => e.preventDefault()}
                     onDragStart={(e) => e.preventDefault()}
                   />
 
+                  {/* Overlay */}
                   <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
                     <h3 className="text-xl font-semibold mb-2">
                       {photo.title}
@@ -106,6 +111,7 @@ const Gallery = () => {
           </div>
         )}
 
+        {/* Empty */}
         {!loading && filteredPhotos.length === 0 && (
           <div className="text-center py-20">
             <p className="text-zinc-400 text-lg">
@@ -115,6 +121,7 @@ const Gallery = () => {
         )}
       </div>
 
+      {/* Lightbox */}
       {selectedPhoto && (
         <Lightbox
           photo={selectedPhoto}
