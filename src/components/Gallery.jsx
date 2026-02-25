@@ -60,23 +60,13 @@ const Gallery = () => {
               onClick={() => setSelectedPhoto(photo)}
             >
 
-              {/* Container */}
-              <div className="relative w-full flex items-center justify-center overflow-hidden">
-
-                {/* Blurred Background */}
-                <img
-                  src={photo.thumbnailUrl}
-                  alt=""
-                  className="absolute inset-0 w-full h-full object-cover blur-2xl scale-110 opacity-40"
-                />
-
-                {/* Main Image */}
+              {/* Fixed Professional Aspect Ratio */}
+              <div className="aspect-[4/5] w-full overflow-hidden">
                 <img
                   src={photo.thumbnailUrl}
                   alt={photo.title}
-                  className="relative w-full h-auto max-h-[500px] object-contain transition-transform duration-500 group-hover:scale-105"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
-
               </div>
 
               {/* Overlay */}
