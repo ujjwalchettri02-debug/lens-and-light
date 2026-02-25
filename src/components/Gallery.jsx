@@ -74,22 +74,24 @@ const Gallery = () => {
                 className="cursor-pointer"
                 onClick={() => setSelectedPhoto(photo)}
               >
-                <div className="relative overflow-hidden rounded-lg bg-zinc-900 shadow-xl transition-all duration-300 hover:scale-[1.02]">
+                <div className="relative rounded-lg bg-zinc-900 shadow-xl overflow-hidden transition-transform duration-300 hover:scale-[1.02]">
 
-                  {/* Image */}
-                  <img
-                    src={photo.thumbnailUrl || photo.imageUrl}
-                    alt={photo.title}
-                    loading="lazy"
-                    className="w-full h-auto object-cover"
-                    onError={(e) => {
-                      e.currentTarget.src = photo.imageUrl;
-                    }}
-                    onContextMenu={(e) => e.preventDefault()}
-                    onDragStart={(e) => e.preventDefault()}
-                  />
+                  {/* Image (Stable Height Fix) */}
+                  <div className="aspect-[4/3] w-full">
+                    <img
+                      src={photo.thumbnailUrl || photo.imageUrl}
+                      alt={photo.title}
+                      loading="lazy"
+                      className="w-full h-full object-cover"
+                      onError={(e) => {
+                        e.currentTarget.src = photo.imageUrl;
+                      }}
+                      onContextMenu={(e) => e.preventDefault()}
+                      onDragStart={(e) => e.preventDefault()}
+                    />
+                  </div>
 
-                  {/* Desktop Overlay Only */}
+                  {/* Desktop Hover Overlay Only */}
                   <div className="absolute inset-0 bg-black/60 opacity-0 md:hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 pointer-events-none">
                     <h3 className="text-xl font-semibold mb-2">
                       {photo.title}
