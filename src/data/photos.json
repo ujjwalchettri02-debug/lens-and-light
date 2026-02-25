@@ -83,5 +83,22 @@
       "settings": "ISO 64, f/16, 1/125s"
     },
     "digitalDownload": true
+  },
+  {
+    "id": 6,
+    "title": "white against Blue",
+    "description": "White flowers under the blue sky",
+    "category": "Floral",
+    "imageUrl": "https://unsplash.com/photos/a-branch-with-white-flowers-and-green-leaves-aZBWLghn5KM.jpg",
+    "thumbnailUrl": "https://unsplash.com/photos/a-branch-with-white-flowers-and-green-leaves-aZBWLghn5KM.jpg",
+    "price": 399,
+    "dollarPrice": 5.5,
+    "stripeLink": "https://rzp.io/rzp/XJ9S6Mw6",
+    "technical": {
+      "camera": "Nikon Z50",
+      "lens": "15-50mm f/2.8",
+      "settings": "ISO 64, f/16, 1/125s"
+    },
+    "digitalDownload": true
   }
 ]
