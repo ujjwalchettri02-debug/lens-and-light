@@ -6,7 +6,7 @@
     "category": "Minimal",
     "imageUrl": "https://res.cloudinary.com/dbqld3dms/image/upload/v1771415971/DSC_1698_izeojn.jpg",
     "thumbnailUrl":"https://res.cloudinary.com/dbqld3dms/image/upload/f_auto,q_auto,w_800/v1771415971/DSC_1698_izeojn.jpg",
-    "price": 299,
+    "price": 100,
     "dollarPrice": 5.5,
     "stripeLink": "https://rzp.io/rzp/78FwKdts",
     "technical": {
@@ -23,7 +23,7 @@
     "category": "Floral",
     "imageUrl": "https://res.cloudinary.com/dbqld3dms/image/upload/v1771387617/DSC_2256_op6ujc.jpg",
     "thumbnailUrl": "https://res.cloudinary.com/dbqld3dms/image/upload/v1771387617/DSC_2256_op6ujc.jpg",
-    "price": 299,
+    "price": 100,
     "dollarPrice": 5.5,
     "stripeLink": "https://rzp.io/rzp/78FwKdts",
     "technical": {
@@ -40,7 +40,7 @@
     "category": "Scenic",
     "imageUrl": "https://res.cloudinary.com/dbqld3dms/image/upload/v1771387881/20230330_131101_yfxolu.jpg",
     "thumbnailUrl": "https://res.cloudinary.com/dbqld3dms/image/upload/v1771387881/20230330_131101_yfxolu.jpg",
-    "price": 399,
+    "price": 100,
     "dollarPrice": 5.5,
     "stripeLink": "https://rzp.io/rzp/XJ9S6Mw6",
     "technical": {
@@ -57,7 +57,7 @@
     "category": "Floral",
     "imageUrl": "https://res.cloudinary.com/dbqld3dms/image/upload/v1771822114/DSC_3426_enicfo.jpg",
     "thumbnailUrl": "https://res.cloudinary.com/dbqld3dms/image/upload/v1771822114/DSC_3426_enicfo.jpg",
-    "price": 299,
+    "price": 100,
     "dollarPrice": 5.5,
     "stripeLink": "https://rzp.io/rzp/XJ9S6Mw6",
     "technical": {
@@ -74,7 +74,7 @@
     "category": "Scenic",
     "imageUrl": "https://res.cloudinary.com/dbqld3dms/image/upload/v1771822022/20250517_092725_1_eja0cr.jpg",
     "thumbnailUrl": "https://res.cloudinary.com/dbqld3dms/image/upload/v1771822022/20250517_092725_1_eja0cr.jpg",
-    "price": 299,
+    "price": 100,
     "dollarPrice": 5.5,
     "stripeLink": "https://rzp.io/rzp/XJ9S6Mw6",
     "technical": {
@@ -91,7 +91,7 @@
     "category": "Floral",
     "imageUrl": "https://res.cloudinary.com/dbqld3dms/image/upload/v1771992694/DSC_3491_xy1dor.jpg",
     "thumbnailUrl": "https://res.cloudinary.com/dbqld3dms/image/upload/v1771992694/DSC_3491_xy1dor.jpg",
-    "price": 399,
+    "price": 100,
     "dollarPrice": 5.5,
     "stripeLink": "https://rzp.io/rzp/XJ9S6Mw6",
     "technical": {
@@ -108,7 +108,7 @@
     "category": "Floral",
     "imageUrl": "https://res.cloudinary.com/dbqld3dms/image/upload/v1771993984/DSC_4983_jt8kda.jpg",
     "thumbnailUrl": "https://res.cloudinary.com/dbqld3dms/image/upload/v1771993984/DSC_4983_jt8kda.jpg",
-    "price": 399,
+    "price": 100,
     "dollarPrice": 5.5,
     "stripeLink": "https://rzp.io/rzp/XJ9S6Mw6",
     "technical": {
